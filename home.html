@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+    <div id="app">
+        <div class="header">
+            <a class="logo">TEAMUP</a>
+            <div class="header-right">
+                <a>Welcome back, {{user + "!"}}</a>
+                <a class="logout" href="#logout">Log out</a>
+            </div>
+        </div>
+        <h1>Modules with projects</h1>
+
+
+
+        <div class="body">
+            <ul>
+                <div v-for="m of modules">
+                    <p> {{m.code}} </p>
+                    <a href = {{m.url}}> course info </a>
+                    <a> Find Me Teammates</a>
+                </div>
+            </ul>
+        </div>
+
+
+
+    <script src="http://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="main.js"></script>
+
+
+
+</body>
+</html>

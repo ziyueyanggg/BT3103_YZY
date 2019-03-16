@@ -8,22 +8,23 @@
 <body>
     <div id="app">
         <div class="header">
-            <a class="logo">TEAMUP</a>
+            <img src = "https://cdn1.imggmi.com/uploads/2019/3/15/cab4be2f5c5fa9b389c849aa42a5bbe2-full.png" style="width: 250px; height: 70px; margin-left: 40px;"> 
+            <img src = "https://cdn1.imggmi.com/uploads/2019/3/15/c255eab7fcb8a3dcecdfddc71d2c829a-full.png" style="width: 60px; height: 60px; margin-left: 20px; margin-bottom: 10px;">
             <div class="header-right">
                 <a>Welcome back, {{user + "!"}}</a>
                 <a class="logout" href="#logout">Log out</a>
             </div>
         </div>
-        <h1>Modules with projects</h1>
 
-
-
-        <div class="body">
+        <div class="Modules">
+        <h1>Modules with projects:</h1>
             <ul>
-                <div v-for="m of modules">
-                    <p> {{m.code}} </p>
-                    <a href = {{m.url}}> course info </a>
-                    <a> Find Me Teammates</a>
+                <div v-for="m of modules" class = "container">
+                    <a> {{m.code}} </a>
+                    <div class="header-right">
+                        <a v-bind:href = "m.url" class="button"> Course info </a>
+                        <a class="button"> Find Me Teammates</a>
+                    </div>
                 </div>
             </ul>
         </div>

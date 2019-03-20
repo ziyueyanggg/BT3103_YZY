@@ -1,18 +1,37 @@
-body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  background: url(https://images.pexels.com/photos/1661004/pexels-photo-1661004.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026w=500);
-
-  background-size: cover;
+html, body{
+    height: 100%;
+    width: 100%;
 }
 
+.navbar{
+    background-color: #FFFFFF;
+    padding: 1% 0;
+    font-size: 1.2em;
+    margin-bottom:0;
+    border-radius:0;
+}
+
+.navbar-brand{
+    min-height: 40px;
+}
+.navbar-brand>img{
+    max-height: 40px;
+    width: auto;
+}
+.background{
+    background: url(../../img/student-login-background.jpeg),linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) no-repeat center center fixed;
+    background-blend-mode: overlay;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
 
 .loginbox{
     width: 320px;
     height: 430px;
-    background: #000;
-    color: #fff;
+    background: #fff;
+    color: #000;
     top: 50%;
     left: 50%;
     position: absolute;
@@ -51,37 +70,17 @@ h1{
 
 .loginbox input[type="text"], input[type="password"]{
     border: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #000;
     background: transparent;
     outline: none;
     height:  40px;
-    color: #fff;
-}
-
-.loginbox input[type="submit"]{
-    border: none;
-    outline: none;
-    height: 40px;
-    background: #fb2525;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 20px;
-}
-
-
-.loginbox input[type="submit"]:hover{
-    cursor: pointer;
-    background: #ffc107;
     color: #000;
 }
 
-.loginbox a{
+
+.loginbox instruction{
     text-decoration: none;
     font-size: 11px;
     line-height: 18px;
-    color: darkgrey;
-}
-
-.loginbox a:hover{
-    color: #ffc107;
+    color: #000;
 }

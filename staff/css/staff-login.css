@@ -1,0 +1,87 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.navbar{
+    background-color: #FFFFFF;
+    padding: 1% 0;
+    font-size: 1.2em;
+    margin-bottom:0;
+    border-radius:0;
+}
+
+.navbar-brand{
+    min-height: 40px;
+}
+.navbar-brand>img{
+    max-height: 40px;
+    width: auto;
+}
+.background{
+    background: url(../../img/student-login-background.jpeg),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) no-repeat center center fixed;
+    background-blend-mode: overlay;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.loginbox{
+    width: 320px;
+    height: 430px;
+    background: #fff;
+    color: #000;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    outline: none;
+    height:  40px;
+    color: #000;
+}
+
+
+
+.loginbox instruction{
+    text-decoration: none;
+    font-size: 11px;
+    line-height: 18px;
+    color: #000;
+}

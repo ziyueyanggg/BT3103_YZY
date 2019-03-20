@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis");
+
+// CHANGE THIS HEX COLOR TO UPDATE WHOLE DESIGN
+$blue: #0684c2;
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: Helvetica, Arial;
+	margin: 1em 0;
+	text-align: center;
+}
+h1 {
+	font-family: Dosis;
+	color: darken($blue, 20);
+	text-align: center;
+	font-size: 3em;
+	i {
+		color: lighten($blue, 40);
+	}
+}
+.timeline-wrapper {
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		height: 10px;
+		transition: 0.75s ease-out;
+		background: lighten($blue, 30);
+		// background: linear-gradient(90deg,lighten($blue,50),white);
+		width: 0px;
+		z-index: 0 !important;
+		left: 0;
+		bottom: 0px;
+	}
+}
+.timeline {
+	display: flex;
+	transition: all 0.3s;
+	justify-content: center;
+	padding-bottom: 30px;
+	border-bottom: 10px solid $blue;
+	margin: 0 0 50px 0;
+
+	.event {
+		background: lighten($blue, 50);
+		cursor: pointer;
+		padding: 1em;
+		border-radius: 5px;
+		position: relative;
+		margin: 0 1em 0 1em;
+		transition: all 0.3s;
+		box-shadow: 0 0 5px #ccc;
+		color: darken($blue, 20);
+		text-align: center;
+
+		.close {
+			position: absolute;
+			bottom: 10px;
+			right: 10px;
+			text-align: center;
+			border-radius: 3px;
+			width: 20px;
+			height: 20px;
+			cursor: pointer;
+			transition: 0.2s;
+			&:hover {
+				color: darkred;
+
+				background: #fff;
+			}
+		}
+
+		h2 {
+			font-family: Dosis;
+			position: relative;
+			z-index: 1;
+
+			&::before {
+				content: "\f073";
+				display: block;
+				position: absolute;
+				top: 50px;
+				left: calc(50% - 15px);
+				font-size: 30px;
+				font-family: "FontAwesome";
+				color: $blue;
+				opacity: 0.1;
+				z-index: 0;
+			}
+		}
+
+		p {
+			color: $blue;
+		}
+
+		* {
+			padding: 0;
+			margin: 0;
+		}
+
+		&:hover {
+			// color:lighten($blue,10);
+			background: lighten($blue, 40);
+			box-shadow: 0px 0px 10px #ccc;
+			  transform-origin: 100px 0px;
+			transform: rotate(-10deg);
+			z-index: 2;
+		}
+		&:hover::after {
+			// transform: scale(1.1);
+			border-color: darken($blue, 10);
+			z-index: 2;
+		}
+
+		&::after {
+			// position: absolute;
+			margin: 0 auto;
+			position: relative;
+			bottom: -65px;
+			content: "";
+			display: block;
+			border-radius: 15px;
+			height: 30px;
+			width: 30px;
+			box-sizing: border-box;
+			box-shadow: 0 0 5px darken($blue, 10);
+			background: #fff;
+			border: 5px solid $blue;
+			transition: all 0.25s;
+			z-index: 2;
+		}
+
+		&.active {
+			background: lighten(yellow, 44);
+			transform: scale(1.1) translateY(-5px);
+			box-shadow: 0 0 10px #ccc;
+			z-index: 2;
+		}
+		&.active::after {
+			border-color: lighten($blue, 30);
+			transform: scale(1.1);
+		}
+		
+		&.previous {
+			background: rgba(0,0,0,0.05);
+						color: rgba(0,0,0,0.1);
+			p {
+										color: rgba(0,0,0,0.1);
+			}
+			&:hover {
+				opacity:1;
+			}
+		}
+	}
+}

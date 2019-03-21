@@ -60,7 +60,7 @@
 
                     <div class="tab-pane fade" id="pills-timeline" role="tabpanel" aria-labelledby="pills-timeline-tab">
                           <div id="app">
-                              <h1><i class="far fa-clock"></i> Last Five Events</h1>
+                              <h1><i class="far fa-clock"></i> BT3103 Timeline</h1>
                               <div class="timeline-wrapper">
                                   <div  class="timeline">
                                       <div v-for="task in TasksFB">
@@ -75,7 +75,7 @@
                               </div>
                               Task Name : <input v-model.trim="newTaskName" @keyup.enter="addTask" placeholder="Final exam"/>
                               Task Date : <input v-model.trim="newTaskDate" @keyup.enter="addTask" placeholder="2/1/2019"/>
-                              <button @click="addTask">Add</button>
+                              <button @click="addTask">Add New Event</button>
                         </div>
                     </div>       
                 </div>          

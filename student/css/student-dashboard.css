@@ -81,6 +81,16 @@ html, body{
     background-color: #f0ad4e;
 }
 
+.content{
+    margin-left: 14px;
+}
+
+.buttons{
+    margin-top: 20px;
+    text-align: right;
+    margin-right: 50px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -91,12 +101,12 @@ body {
 }
 
 h1 {
-  color: #03415f;
+  color: #7d5401;
   text-align: center;
   font-size: 3em;
 }
 h1 i {
-  color: #98dbfc;
+  color: #ffe29e;
 }
 
 .timeline-wrapper {
@@ -107,7 +117,7 @@ h1 i {
   position: absolute;
   height: 10px;
   transition: 0.75s ease-out;
-  background: #67cafa;
+  background: #ffdf6b;
   width: 0px;
   z-index: 0 !important;
   left: 0;
@@ -119,11 +129,11 @@ h1 i {
   transition: all 0.3s;
   justify-content: center;
   padding-bottom: 30px;
-  border-bottom: 10px solid #0684c2;
+  border-bottom: 10px solid #f0ad4e;
   margin: 0 0 50px 0;
 }
 .timeline .event {
-  background: #caecfd;
+  background: #fff6e5;
   cursor: pointer;
   padding: 1em;
   border-radius: 5px;
@@ -131,7 +141,7 @@ h1 i {
   margin: 0 1em 0 1em;
   transition: all 0.3s;
   box-shadow: 0 0 5px #ccc;
-  color: #03415f;
+  color: #7d4a01;
   text-align: center;
 }
 .timeline .event .close {
@@ -162,26 +172,26 @@ h1 i {
   left: calc(50% - 15px);
   font-size: 30px;
   font-family: "FontAwesome";
-  color: #0684c2;
+  color: #f0ad4e;
   opacity: 0.1;
   z-index: 0;
 }
 .timeline .event p {
-  color: #0684c2;
+  color: #d98e03;
 }
 .timeline .event * {
   padding: 0;
   margin: 0;
 }
 .timeline .event:hover {
-  background: #98dbfc;
+  background: #ffe29e;
   box-shadow: 0px 0px 10px #ccc;
   transform-origin: 100px 0px;
   transform: rotate(-10deg);
   z-index: 2;
 }
 .timeline .event:hover::after {
-  border-color: #046291;
+  border-color: #db9b25;
   z-index: 2;
 }
 .timeline .event::after {
@@ -194,9 +204,9 @@ h1 i {
   height: 30px;
   width: 30px;
   box-sizing: border-box;
-  box-shadow: 0 0 5px #046291;
+  box-shadow: 0 0 5px #db9b25;
   background: #fff;
-  border: 5px solid #0684c2;
+  border: 5px solid #f0ad4e;
   transition: all 0.25s;
   z-index: 2;
 }
@@ -207,7 +217,7 @@ h1 i {
   z-index: 2;
 }
 .timeline .event.active::after {
-  border-color: #67cafa;
+  border-color: #ffdf6b;
   transform: scale(1.1);
 }
 .timeline .event.previous {

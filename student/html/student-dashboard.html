@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -24,14 +25,14 @@
         <nav class="navbar navbar-default navbar-fixed-top shadow p-3" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="../index.html"><img src="../img/TeamUP-logo.png">
+                    <a class="navbar-brand" href="../../index.html"><img src="../../img/TeamUP-logo.png">
                     </a>
-                    <a class="navbar-brand" href="../index.html"><img src="../img/TeamUP-word-logo.png">
+                    <a class="navbar-brand" href="../../index.html"><img src="../../img/TeamUP-word-logo.png">
                     </a>
                 </div>
                 <div class="navbar-right">
                     <span>Welcome, Bo Lin!</span>
-                    <a class="navbar-right btn btn-warning btn-xs" href="../logout.html">Log out</a>
+                    <a class="navbar-right btn btn-warning btn-xs" href="../../logout.html">Log out</a>
                 </div>
             </div>
         </nav>
@@ -40,7 +41,7 @@
         
         <div class="container">
             <div class="container sub1">
-                <p class="text"><b>BT3103</b> Application Systems Development for Business Analytics</p>
+                <p class="text text-left"><b>BT3103</b> Application Systems Development for Business Analytics</p>
                 
                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                     <li class="nav-item pill-1">
@@ -60,11 +61,9 @@
 
                     <div class="tab-pane fade" id="pills-timeline" role="tabpanel" aria-labelledby="pills-timeline-tab">
                           <div id="app">
-                              <h1><i class="far fa-clock"></i> Last Five Events</h1>
                               <div class="timeline-wrapper">
                                   <div  class="timeline">
                                       <div v-for="task in TasksFB">
-                                          <p>{{task.name}}</p>
                                           <div class="event">
                                               <span class="close">&times;</span>
                                               <h2>{{task.name}}</h2>
@@ -73,20 +72,35 @@
                                       </div>
                                   </div>
                               </div>
-                              Task Name : <input v-model.trim="newTaskName" @keyup.enter="addTask" placeholder="Final exam"/>
-                              Task Date : <input v-model.trim="newTaskDate" @keyup.enter="addTask" placeholder="2/1/2019"/>
-                              <button @click="addTask">Add</button>
-                        </div>
+                              <div class="container form-group row">
+                                  <div class="col-4">
+                                      Task Name :
+                                      <input class="form-control-sm ml-2" v-model.trim="newTaskName" @keyup.enter="addTask" placeholder="Final exam" style="width: 210px"/>
+                                  </div>
+                                  <div class="col-4">
+                                      Task Date :
+                                      <input class="form-control-sm ml-2" v-model.trim="newTaskDate" @keyup.enter="addTask" placeholder="20/3/2019" style="width: 230px"/>            
+                                  </div>
+                                  <div class="col-4">
+                                      <button @click="addTask" class="btn btn-outline-warning btn-sm btn-block ml-3 mr-5">Add New Event</button>
+                                  </div>
+                              </div>
+                          </div>
                     </div>       
                 </div>          
-            </div>  
+            </div>
+        </div>
+        <div class="container buttons">
+            <a class="btn btn-secondary mr-2" href="student-home.html">Select Another Course</a>
+            <a class="btn btn-warning mr-0" href="#">Find Me Teammates</a>
         </div>
         
         <div id="style">
         </div>
 
         <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->      
+        
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
         
@@ -97,6 +111,7 @@
         <script src="https://unpkg.com/vue"></script>
         <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
         <script src="https://gstatic.com/firebasejs/4.2.0/firebase.js"></script>
-        <script src="js/student-dashboard.js"></script>
+        <script src="../js/student-dashboard.js"></script>
+        
     </body>
 </html>

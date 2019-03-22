@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Student Dashboard</title>
+  </head>
+
+    <body>
+        
+        
+
+    <div id="app">
+        
+        <pie-chart :data="charts.BT3103.gender" :colors="['#b00', '#666']" :donut="true" legend="bottom"></pie-chart>
+        <p>Gender Distribution 1</p>
+        
+        <column-chart :data="charts.BT3103.gender" :colors="['#b00', '#666']"></column-chart>
+        <p>Gender Distribution 2</p>
+        
+        <column-chart :data="charts.BT3103.major" :colors="['#b00', '#666']"> </column-chart>
+        <p>Major Distribution 1</p>
+        
+        <pie-chart :data="charts.BT3103.major" :colors="['#b00', '#666','#686', '#000']"> </pie-chart>
+        <p>Major Distribution 2</p>
+        
+        
+	</div>
+        
+	<script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+	<script src="https://unpkg.com/chart.js@2.7.2/dist/Chart.bundle.js"></script>
+	<script src="https://unpkg.com/vue-chartkick@0.4.0"></script>
+	<script src="https://gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+	<script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
+        
+    <script src="../js/charts.js"></script>
+        
+    </body>
+</html>

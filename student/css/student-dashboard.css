@@ -85,10 +85,16 @@ html, body{
     margin-left: 14px;
 }
 
+.chart-title{
+    font-weight: 500;
+    font-size: 20px;
+}
+
 .buttons{
     margin-top: 20px;
     text-align: right;
     margin-right: 50px;
+    margin-bottom: 20px;
 }
 
 * {

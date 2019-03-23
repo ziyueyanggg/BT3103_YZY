@@ -1,4 +1,5 @@
-var db = firebase.initializeApp({databaseURL: "https://helloworld-29198.firebaseio.com/"}).database();
+var app1 = firebase.initializeApp({databaseURL: "https://helloworld-29198.firebaseio.com/"});
+var db = firebase.database()
 var TasksRef = db.ref("yystest5");
 var app = new Vue({
     el: "#app",
@@ -23,6 +24,23 @@ var app = new Vue({
       }
     }
 });
+
+
+var app2 = firebase.initializeApp({databaseURL: "https://bt3103-mock-data.firebaseio.com/"}, "app2");
+var db2 = firebase.database(app2);
+var TasksRef2 = db2.ref("modules");
+var ppa = new Vue({
+    el: "#app2",
+    data: {
+    },
+    firebase: {
+        charts: {
+          source: db2.ref("modules"),
+          asObject: true
+        }
+    }
+});
+
 
 
 $(document).ready(function() {

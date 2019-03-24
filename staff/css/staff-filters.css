@@ -1,6 +1,9 @@
 html, body{
     height: 100%;
     width: 100%;
+    overflow: auto;
+    padding-bottom: 30px;
+    
 }
 
 .navbar{
@@ -76,7 +79,7 @@ html, body{
 .filter-types{
     margin-bottom: 4px;
     margin-left: 1px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .buttons{
@@ -91,5 +94,54 @@ html, body{
 .button2{
     margin-right: 0px;
     float: right;
-    width: 375px;
+    width: 200px;
+}
+
+
+.sub2 input[type="text"]{
+    color: #000;
+}
+
+.helptext{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.numppl{
+    width: 570px;
+    border-color: darkgrey;
+    border-width: 1.5px;
+}
+
+.pseudotext{
+    font-size: 14px;
+    color: #fff;
+
+}
+
+#load-more{
+    color: dimgrey;
+
+}
+
+#load-more:hover { 
+    color: #449cb5;
+    text-decoration: none;
+}
+
+.divider{
+    margin:0;
+}
+
+.instruction{
+    font-size: 19px;
+    font-weight: 600;
+    color: #449cb5;
+    vertical-align:middle;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.form-groups{
+    vertical-align: middle;
 }

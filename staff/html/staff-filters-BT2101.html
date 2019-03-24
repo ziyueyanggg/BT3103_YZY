@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Own CSS -->
+    <link href="../css/staff-filters.css" type = "text/css" rel="stylesheet" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800" rel="stylesheet">
+      
+    <!-- Select -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.7/dist/css/bootstrap-select.min.css">
+
+    <!-- Page Title -->
+    <title>Staff Filters</title>
+    
+
+  </head>
+
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top shadow p-3" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="staff-home.html"><img src="../../img/TeamUP-logo.png">
+                    </a>
+                    <a class="navbar-brand" href="staff-home.html"><img src="../../img/TeamUP-word-logo.png">
+                    </a>
+                </div>
+                <div class="navbar-right">
+                    <span>Welcome, Anand!</span>
+                    <a class="navbar-right btn btn-warning btn-xs" href="../../logout.html">Log out</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="background"></div>
+        
+        <div class="container">
+            <div class="container sub1">
+                <p class="text text-left heading"><b>BT2101</b> Decision Making Methods and Tools</p>
+            </div>
+                
+            <div class="container shadow p-2">
+                <div class="container sub2 p-4">
+                    <p class="text text-left title">Number of Students in a Group:</p>
+                    <input type="text" class="form-control numppl" placeholder="4" aria-describedby="helptext">
+                    <small id="helptext" class="form-text text-muted helptext">
+                    Please enter an integer not smaller than 2.
+                    </small>
+                </div>
+                <br>
+                <div class="container sub2 px-4">
+                    <div class="mb-3">
+                        <span class="text text-left title">Type of Groups to form:<span class="pseudotext">a<a tabindex="0" class="badge badge-secondary" data-toggle="popover" data-trigger="focus" data-html="true" 
+                        data-content="<div><b>Maximise Diversity Within Groups: </b>
+                        Put students with diverse backgrounds into the same group.</div><br>
+                        <div><b>Random Assignment: </b>Generate pseudo-random groups.</div><br>
+                        <div><b>Maximise Fairness Between Groups: </b>Ensure all groups are similar on the attributes that you specify.</div>">What's this?</a></span></span>
+                    </div>
+                    <div class="row col-8">
+                        <a class="btn btn-warning col-lg-5 mr-2" href="#">Maximise Diversity Within Groups</a>
+                        <a class="btn btn-warning col-lg-5 ml-2" href="#">Random Assignment</a>
+                    </div>
+                    <div class="row col-7" data-toggle="tooltip" data-placement="bottom" title="Click to Expand">
+                        <a class="btn btn-info my-3 btn-block mr-2" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            [Advanced] Maximise Fairness Between Groups
+                        </a>
+                    </div>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <span class="instruction ml-3">Specify attributes that groups should be similar on, then click: </span>
+                                    <a class="btn btn-outline-info ml-4 form-groups" href="#">Form Groups</a>
+                                </div>
+                                <div class="row mt-5">
+                                    <div class="col">
+                                        <p class="filter-types">Rule 1</p>
+                                        <select class="selectpicker" data-actions-box="true" title="Nothing Selected">
+                                            <option value="preu">Pre-U background</option>
+                                            <option value="nationality">Nationality</option>
+                                            <option value="cap">Cumulative Grade Points</option>
+                                            <option value="gender">Gender</option>
+                                            <option value="year">Year</option>
+                                            <option value="faculty">Faculty</option>
+                                            <option value="major">Major</option>
+                                            <option value="skillsets">Skill Sets</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <p class="filter-types">Rule 2</p>
+                                        <select class="selectpicker" data-actions-box="true" title="Nothing Selected">
+                                            <option value="preu">Pre-U background</option>
+                                            <option value="nationality">Nationality</option>
+                                            <option value="cap">Cumulative Grade Points</option>
+                                            <option value="gender">Gender</option>
+                                            <option value="year">Year</option>
+                                            <option value="faculty">Faculty</option>
+                                            <option value="major">Major</option>
+                                            <option value="skillsets">Skill Sets</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <p class="filter-types">Rule 3</p>
+                                        <select class="selectpicker" data-actions-box="true" title="Nothing Selected">
+                                            <option value="preu">Pre-U background</option>
+                                            <option value="nationality">Nationality</option>
+                                            <option value="cap">Cumulative Grade Points</option>
+                                            <option value="gender">Gender</option>
+                                            <option value="year">Year</option>
+                                            <option value="faculty">Faculty</option>
+                                            <option value="major">Major</option>
+                                            <option value="skillsets">Skill Sets</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <p class="filter-types">Rule 4</p>
+                                        <select class="selectpicker" data-actions-box="true" title="Nothing Selected">
+                                            <option value="preu">Pre-U background</option>
+                                            <option value="nationality">Nationality</option>
+                                            <option value="cap">Cumulative Grade Points</option>
+                                            <option value="gender">Gender</option>
+                                            <option value="year">Year</option>
+                                            <option value="faculty">Faculty</option>
+                                            <option value="major">Major</option>
+                                            <option value="skillsets">Skill Sets</option>
+                                        </select>
+                                    </div>
+                                </div>                    
+                                <br>
+                                <div class="row collapse mt-3 mb-4" id="collapse2">
+                                    <div class="col">
+                                        <p class="filter-types">Rule 5</p>
+                                        <select class="selectpicker" data-actions-box="true" title="Nothing Selected">
+                                            <option value="preu">Pre-U background</option>
+                                            <option value="nationality">Nationality</option>
+                                            <option value="cap">Cumulative Grade Points</option>
+                                            <option value="gender">Gender</option>
+                                            <option value="year">Year</option>
+                                            <option value="faculty">Faculty</option>
+                                            <option value="major">Major</option>
+                                            <option value="skillsets">Skill Sets</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <p class="filter-types">Rule 6</p>
+                                        <select class="selectpicker" data-actions-box="true" title="Nothing Selected">
+                                            <option value="preu">Pre-U background</option>
+                                            <option value="nationality">Nationality</option>
+                                            <option value="cap">Cumulative Grade Points</option>
+                                            <option value="gender">Gender</option>
+                                            <option value="year">Year</option>
+                                            <option value="faculty">Faculty</option>
+                                            <option value="major">Major</option>
+                                            <option value="skillsets">Skill Sets</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <p class="filter-types">Rule 7</p>
+                                        <select class="selectpicker" data-actions-box="true" title="Nothing Selected">
+                                            <option value="preu">Pre-U background</option>
+                                            <option value="nationality">Nationality</option>
+                                            <option value="cap">Cumulative Grade Points</option>
+                                            <option value="gender">Gender</option>
+                                            <option value="year">Year</option>
+                                            <option value="faculty">Faculty</option>
+                                            <option value="major">Major</option>
+                                            <option value="skillsets">Skill Sets</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <p class="filter-types">Rule 8</p>
+                                        <select class="selectpicker" data-actions-box="true" title="Nothing Selected">
+                                            <option value="preu">Pre-U background</option>
+                                            <option value="nationality">Nationality</option>
+                                            <option value="cap">Cumulative Grade Points</option>
+                                            <option value="gender">Gender</option>
+                                            <option value="year">Year</option>
+                                            <option value="faculty">Faculty</option>
+                                            <option value="major">Major</option>
+                                            <option value="skillsets">Skill Sets</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="mb-3 text-center">
+                                    <hr class="divider"/>
+                                    <input id="load-more" class="btn btn-link btn-sm" data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2" value="Load More" type="button" onclick="change()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container buttons">
+            <a class="btn btn-secondary button2 mr-0 ml-0" href="staff-home.html">Select Another Course</a>
+        </div>
+                
+                
+                
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->      
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.7/dist/js/bootstrap-select.min.js"></script>
+        
+        <script src="https://unpkg.com/vue"></script>
+        <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+        <script src="https://unpkg.com/chart.js@2.7.2/dist/Chart.bundle.js"></script>
+        <script src="https://unpkg.com/vue-chartkick@0.4.0"></script>
+        <script src="https://gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+        <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
+        
+        <script>
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip(); 
+                $('[data-toggle="popover"]').popover(); 
+            });
+            
+            function change(){
+                var elem = document.getElementById("load-more");
+                if (elem.value=="Load More") elem.value = "Load Less";
+                else elem.value = "Load More";
+            }
+        </script>
+    
+    </body>
+</html>

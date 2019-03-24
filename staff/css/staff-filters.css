@@ -121,6 +121,7 @@ html, body{
 
 #load-more{
     color: dimgrey;
+    text-decoration: none;
 
 }
 

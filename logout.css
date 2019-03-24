@@ -30,13 +30,11 @@ html, body{
 .landing-text{
     color: white;
     position: absolute;
-    margin-left: auto;
-    margin-right:auto;
+    margin-left: 100px;
+    margin-right: 100px;
     text-align: center;
     font-size: 60px;
-    text-overflow: ellipsis;
-    overflow: auto;
-    white-space: normal;
+
     font-family: 'Nunito', sans-serif;
     font-weight: 300;
     padding-top: 100px;

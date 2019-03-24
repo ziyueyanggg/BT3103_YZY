@@ -1,0 +1,95 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.navbar{
+    background-color: #FFFFFF;
+    padding: 1% 0;
+    font-size: 1.2em;
+    margin-bottom:0;
+    border-radius:0;
+    vertical-align: middle;
+}
+
+.navbar-brand{
+    min-height: 40px;
+}
+
+.navbar-brand>img{
+    max-height: 40px;
+    width: auto;
+}
+
+.navbar-right span{
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.navbar-right a{
+    vertical-align: middle;
+    padding: 2px 5px;
+    font-weight: 600;
+}
+
+.background{
+    background: #fff,linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) no-repeat center center fixed;
+    background-blend-mode: overlay;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+
+}
+
+.heading{
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+    color: #000;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-weight: 200;
+}
+
+.container{
+    position: relative;
+}
+
+.container sub2{
+    margin-left: 20px;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.optgroup{
+    font-size: 13px;
+}
+
+
+.form-group {
+    font-size: 12px !important;
+}
+
+.filter-types{
+    margin-bottom: 4px;
+    margin-left: 1px;
+    font-weight: 400;
+}
+
+.buttons{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button1{
+    width: 720px;
+    font-weight: 600;
+}
+.button2{
+    margin-right: 0px;
+    float: right;
+    width: 375px;
+}

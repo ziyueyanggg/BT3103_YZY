@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Own CSS -->
+    <link href="../css/staff-dashboard.css" type = "text/css" rel="stylesheet" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800" rel="stylesheet">
+      
+    <!-- Page Title -->
+    <title>Staff Dashboard</title>
+    
+
+  </head>
+
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top shadow p-3" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="staff-home.html"><img src="../../img/TeamUP-logo.png">
+                    </a>
+                    <a class="navbar-brand" href="staff-home.html"><img src="../../img/TeamUP-word-logo.png">
+                    </a>
+                </div>
+                <div class="navbar-right">
+                    <span>Welcome, Anand!</span>
+                    <a class="navbar-right btn btn-warning btn-xs" href="../../logout.html">Log out</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="background"></div>
+        
+        <div class="container">
+            <div class="container sub1">
+                <p class="text text-left"><b>CS1020</b> Data Structure and Algorithms </p>
+                
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item pill-1">
+                        <a class="nav-link active" id="pills-stats-tab" data-toggle="pill" href="#pills-stats" role="tab" aria-controls="pills-stats" aria-selected="true">Statistics</a>
+                    </li>
+                    <li class="nav-item pill-2">
+                        <a class="nav-link" id="pills-timeline-tab" data-toggle="pill" href="#pills-timeline" role="tab" aria-controls="pills-timeline" aria-selected="false">Timeline</a>
+                    </li>
+                </ul>
+            </div>
+                
+            <div class="container content shadow p-2">
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-stats" role="tabpanel" aria-labelledby="pills-stats-tab">
+                        <div id="app2">
+                            <div class="row mt-3">
+                                <div class="col-lg-4">
+                                    <p class="chart-title">Gender</p>
+                                    <pie-chart :data="charts.CS1020.gender" :colors="['#f7c466', '#888']" :donut="true" legend="bottom">
+                                    </pie-chart>
+                                </div>
+                                <div class="col-lg-4">
+                                    <p class="chart-title">Major</p>
+                                    <column-chart :data="charts.CS1020.major" :colors="['#f0ad4e', '#888']">
+                                    </column-chart>
+                                </div>
+                                <div class="col-lg-4">
+                                    <p class="chart-title">pre-U Background</p>
+                                    <pie-chart :data="charts.CS1020.preU" :colors="['#f7c466','#888','#ed7871']" :donut="true" legend="bottom">
+                                    </pie-chart>
+                                </div>
+                            </div>
+	                   </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-timeline" role="tabpanel" aria-labelledby="pills-timeline-tab">
+                          <div id="app">
+                              <div class="timeline-wrapper">
+                                  <div  class="timeline">
+                                      <div v-for="task in TasksFB">
+                                          <div class="event">
+                                              <span class="close">&times;</span>
+                                              <h2>{{task.name}}</h2>
+                                              <p>{{task.date}}</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="container form-group row">
+                                  <div class="col-4">
+                                      Task Name :
+                                      <input class="form-control-sm ml-2" v-model.trim="newTaskName" @keyup.enter="addTask" placeholder="Final exam" style="width: 210px"/>
+                                  </div>
+                                  <div class="col-4">
+                                      Task Date :
+                                      <input class="form-control-sm ml-2" v-model.trim="newTaskDate" @keyup.enter="addTask" placeholder="20/3/2019" style="width: 230px"/>            
+                                  </div>
+                                  <div class="col-4">
+                                      <button @click="addTask" class="btn btn-outline-warning btn-sm btn-block ml-3 mr-5">Add New Event</button>
+                                  </div>
+                              </div>
+                          </div>
+                    </div>     
+                </div>          
+            </div>
+         </div>   
+                     
+         <div class="container buttons">
+            <a class="btn btn-secondary mr-2" href="staff-home.html">Select Another Course</a>
+            <a class="btn btn-warning mr-0" href="staff-filters-CS1020.html">Create Project Groups</a>
+        </div>
+        
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->      
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
+        <script src="https://unpkg.com/vue"></script>
+        <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+        <script src="https://unpkg.com/chart.js@2.7.2/dist/Chart.bundle.js"></script>
+        <script src="https://unpkg.com/vue-chartkick@0.4.0"></script>
+        <script src="https://gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+        <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>       
+            
+        <script src="../js/staff-dashboard-CS1020.js"></script>
+
+    </body>
+</html>

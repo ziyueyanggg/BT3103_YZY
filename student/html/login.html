@@ -2,24 +2,54 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Own CSS -->
     <link href="../css/student-login.css" type = "text/css" rel="stylesheet" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800" rel="stylesheet">
+
+    <!-- Page Title -->
+    <title>Student Login</title>
     <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+
     <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+
   </head>
-
-
-
-
-
-  <body>
+<body>
     <!-- The surrounding HTML is left untouched by FirebaseUI.
          Your app may use that space for branding, controls and other customizations.-->
-    <h1>Welcome to My Awesome App</h1>
-    <div id="firebaseui-auth-container"></div>
-    <div id="loader">Loading...</div>
+         <div class="background">
+             <nav class="navbar navbar-default navbar-fixed-top shadow p-3" role="navigation">
+                 <div class="container">
+                     <div class="navbar-header">
+                         <a class="navbar-brand" href="../../index.html"><img src="../../img/TeamUP-logo.png">
+                         </a>
+                         <a class="navbar-brand" href="../../index.html"><img src="../../img/TeamUP-word-logo.png">
+                         </a>
+                     </div>
+                 </div>
+             </nav>
+
+             <div class = "loginbox">
+                 <img src="../../img/avatar.png" class="avatar">
+
+                 <h1>Student Login</h1>
+                 <div id="firebaseui-auth-container"></div>
+                 <div id="loader">Loading...</div>
+                     <instruction>Please sign in with your NUS Email<br><i>@u.nus.edu</i></instruction><br>
+                 </form>
+             </div>
+
+             <div>
     <script src="../js/fireBase.js"></script>
     <script src="../js/student-login.js"></script>
   </body>

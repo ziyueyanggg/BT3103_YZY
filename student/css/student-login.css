@@ -1,7 +1,7 @@
 html, body{
     height: 100%;
     width: 100%;
-    overflow: auto;
+    overflow: hide;
     padding-bottom: 30px;
 
 }
@@ -25,14 +25,13 @@ html, body{
     background: url(../../img/student-login-background.jpeg),linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) no-repeat center center fixed;
     background-blend-mode: overlay;
     position: relative;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     background-size: cover;
 }
 
 .loginbox{
     width: 320px;
-    height: 560px;
     background: #fff;
     color: #000;
     top: 55%;
@@ -40,8 +39,9 @@ html, body{
     position: absolute;
     transform: translate(-50%,-50%);
     box-sizing: border-box;
-    padding: 70px 30px;
-    border-radius: 5%;
+    padding-top: 70px;
+    padding-bottom: 0px;
+    border-radius: 2%;
 }
 
 .avatar{
@@ -84,7 +84,9 @@ h1{
 
 .loginbox instruction{
     text-decoration: none;
-    font-size: 11px;
+    font-size: 13px;
     line-height: 18px;
     color: #000;
+    background-color: blanchedalmond;
+    margin-left: 25px;
 }

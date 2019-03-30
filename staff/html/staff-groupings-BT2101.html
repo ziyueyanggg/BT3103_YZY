@@ -24,6 +24,7 @@
 
     
     <body>
+        <div class="preloader"></div>
         <nav class="navbar navbar-default navbar-fixed-top shadow p-3" role="navigation">
             <div class="container">
                 <div class="navbar-header">
@@ -206,6 +207,13 @@
         <script src="https://gstatic.com/firebasejs/4.2.0/firebase.js"></script>
         <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
 
+        <script>
+            $(document).ready(function() {
+                $('.preloader').delay(2000);
+                $('.preloader').fadeOut('fast');
+            });
+        </script>
+        
         <script>
             function change(){
                 var elem = document.getElementById("load-more");

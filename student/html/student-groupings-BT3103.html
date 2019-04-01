@@ -7,26 +7,26 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+
     <!-- Own CSS -->
     <link href="../css/student-groupings.css" type = "text/css" rel="stylesheet" />
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800" rel="stylesheet">
-      
+
     <!-- Select -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.7/dist/css/bootstrap-select.min.css">
-
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
     <!-- Page Title -->
     <title>Student Grouping Results</title>
-    
+
     </head>
 
-    
+
     <body>
         <div class="preloader"></div>
         <nav class="navbar navbar-default navbar-fixed-top shadow p-3" role="navigation">
-            <div class="container">
+            <div id ="app3" class="container">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="student-home.html"><img src="../../img/TeamUP-logo.png">
                     </a>
@@ -34,12 +34,12 @@
                     </a>
                 </div>
                 <div class="navbar-right">
-                    <span>Welcome, e0202946!</span>
-                    <a class="navbar-right btn btn-warning btn-xs" href="../../logout.html">Log out</a>
+                    <span>Welcome, {{user}}!</span>
+                    <button class="navbar-right btn btn-warning btn-xs" onclick="mainApp.logOut()">Log out</button>
                 </div>
             </div>
         </nav>
-        
+
         <div class="container">
             <div class="container ml-0">
                 <p class="text pull-left heading ml-0">Your Potential Teammates for <b>BT3103</b> are:</p>
@@ -113,7 +113,7 @@
                 </div>
 
                 <br>
-                
+
                 <div class="row">
                     <div class="col-lg-1">
                         <p class="number pull-left">4.</p>
@@ -157,17 +157,19 @@
                         <a href="mailto:e0138452@u.nus.edu" class="btn btn-md pull-right email">Email</a>
                     </div>
                 </div>
-                
-            </div>            
+
+            </div>
         </div>
         <div class="container buttons">
             <a class="btn btn-secondary mr-2 btn1" href="student-filters-BT3103.html">Start Over</a>
             <a class="btn btn-warning mr-5 btn2" href="student-home.html">Select Another Course</a>
         </div>
-        
 
+        <script src="http://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="../js/fireBase.js"></script>
+        <script src="../js/home.js"></script>
         <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->      
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>

@@ -13,7 +13,7 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800" rel="stylesheet">
-
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
     <!-- Page Title -->
     <title>Staff Home</title>
 
@@ -21,7 +21,7 @@
 
     <body>
         <nav class="navbar navbar-default navbar-fixed-top shadow p-3" role="navigation">
-            <div class="container">
+            <div id = "app3" class="container">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#"><img src="../../img/TeamUP-logo.png">
                     </a>
@@ -29,8 +29,8 @@
                     </a>
                 </div>
                 <div class="navbar-right">
-                    <span>Welcome, Anand!</span>
-                    <a class="navbar-right btn btn-warning btn-xs" href="../../logout.html">Log out</a>
+                    <span>Welcome, {{user}}!</span>
+                    <button class="navbar-right btn btn-warning btn-xs" onclick="mainApp.logOut()">Log out</a>
                 </div>
             </div>
         </nav>
@@ -82,8 +82,16 @@
                 </div>
             </div>
 
-            
-        
+            <script src="http://cdn.jsdelivr.net/npm/vue"></script>
+            <script src="../js/fireBase.js"></script>
+            <script src="../js/home.js"></script>
+            <script src="https://unpkg.com/vue"></script>
+            <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+            <script src="https://unpkg.com/chart.js@2.7.2/dist/Chart.bundle.js"></script>
+            <script src="https://unpkg.com/vue-chartkick@0.4.0"></script>
+            <script src="https://gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+            <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
+
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

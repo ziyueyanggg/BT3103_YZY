@@ -1,9 +1,9 @@
 html, body{
     height: 100%;
     width: 100%;
-    overflow: auto;
+    overflow: hide;
     padding-bottom: 30px;
-    
+
 }
 
 .navbar{
@@ -22,25 +22,25 @@ html, body{
     width: auto;
 }
 .background{
-    background: url(../../img/student-login-background.jpeg),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) no-repeat center center fixed;
+    background: url(../../img/student-login-background.jpeg),linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) no-repeat center center fixed;
     background-blend-mode: overlay;
     position: relative;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     background-size: cover;
 }
 
 .loginbox{
     width: 320px;
-    height: 430px;
     background: #fff;
     color: #000;
-    top: 50%;
+    top: 55%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
     box-sizing: border-box;
-    padding: 70px 30px;
+    padding-top: 70px;
+    padding-bottom: 0px;
 }
 
 .avatar{
@@ -81,10 +81,11 @@ h1{
 }
 
 
-
 .loginbox instruction{
     text-decoration: none;
-    font-size: 11px;
+    font-size: 13px;
     line-height: 18px;
     color: #000;
+    background-color: blanchedalmond;
+    margin-left: 25px;
 }

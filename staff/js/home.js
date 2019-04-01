@@ -25,7 +25,7 @@ var uid = null;
       }else{
         // Redirect to login page
         uid = null;
-          window.location.replace("../html/login.html");
+          window.location.replace("../html/staff-login.html");
       }
     });
 

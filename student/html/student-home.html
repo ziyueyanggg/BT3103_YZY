@@ -23,7 +23,7 @@
 
     <body>
         <nav class="navbar navbar-default navbar-fixed-top shadow p-3" role="navigation">
-            <div id= "app" class="container">
+            <div id= "app3" class="container">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#"><img src="../../img/TeamUP-logo.png">
                     </a>
@@ -31,7 +31,7 @@
                     </a>
                 </div>
                 <div class="navbar-right">
-                    <span>Welcome, e0202946!</span>
+                    <span>Welcome, {{user}}!</span>
                     <button class="navbar-right btn btn-warning btn-xs" onclick="mainApp.logOut()">Log out</button>
                 </div>
             </div>
@@ -82,14 +82,15 @@
                         </div>
                     </div>
                 </div>
+
             </div>
 
 
 
         <!-- Optional JavaScript -->
+        <script src="http://cdn.jsdelivr.net/npm/vue"></script>
         <script src="../js/fireBase.js"></script>
         <script src="../js/home.js"></script>
-        <script src="http://cdn.jsdelivr.net/npm/vue"></script>
         <script src="https://unpkg.com/vue"></script>
         <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
         <script src="https://unpkg.com/chart.js@2.7.2/dist/Chart.bundle.js"></script>

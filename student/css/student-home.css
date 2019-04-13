@@ -79,6 +79,14 @@ html, body{
     font-family: 'Nunito', sans-serif;
 }
 
+.btn-custom3{
+    width: 100%;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    margin-right: 4px;
+}
+
 .text{
     font-size: 50px;
     font-family: 'Nunito', sans-serif;

@@ -26,16 +26,16 @@ var app = new Vue({
 });
 
 
-var app2 = firebase.initializeApp({databaseURL: "https://bt3103-mock-data.firebaseio.com/"}, "app2");
+var app2 = firebase.initializeApp({databaseURL: "https://modulefirebase-57616.firebaseio.com/"}, "app2");
 var db2 = firebase.database(app2);
-var TasksRef2 = db2.ref("modules");
+var TasksRef2 = db2.ref("module");
 var ppa = new Vue({
     el: "#app2",
     data: {
     },
     firebase: {
         charts: {
-          source: db2.ref("modules"),
+          source: db2.ref("module"),
           asObject: true
         }
     }

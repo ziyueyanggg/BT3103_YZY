@@ -3,6 +3,7 @@ html, body{
     width: 100%;
     overflow: auto;
     padding-bottom: 30px;
+    text-decoration: none;
     
 }
 

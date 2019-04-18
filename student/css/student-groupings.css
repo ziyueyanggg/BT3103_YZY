@@ -107,3 +107,58 @@ html, body{
    background-color: #FFF;
    background-position: center;
 }
+
+.my-progress{
+    width: 100%;
+    background-color: #ebebeb;
+    border-radius: 5px;
+}
+
+#my-bar1{
+    background-color: #ffcc7a;  
+    border-radius: 5px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-size: 11;
+    font-weight: 400;
+}
+
+
+#my-bar2{
+    background-color: #ffcc7a;  
+    border-radius: 5px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-size: 11;
+    font-weight: 400;
+}
+
+
+#my-bar3{
+    background-color: #ffcc7a;  
+    border-radius: 5px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-size: 11;
+    font-weight: 400;
+}
+
+
+#my-bar4{
+    background-color: #ffcc7a;  
+    border-radius: 5px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-size: 11;
+    font-weight: 400;
+}
+
+
+#my-bar5{
+    background-color: #ffcc7a;  
+    border-radius: 5px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-size: 11;
+    font-weight: 400;
+}
